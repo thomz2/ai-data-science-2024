@@ -55,13 +55,3 @@ class GeneticAlgo:
 
         best_path = min(best_paths, key=lambda x: x.distance)
         return [best_path, best_paths]
-
-
-
-# test = GeneticAlgo(pop_size= 500, mut_rate= 0.6, generations = 1000)
-# generations = test.generate()[1]
-
-# for i in range(len(generations)):
-#     print(f"{i}: {generations[i]}")
-    
-# print(test.mutations)

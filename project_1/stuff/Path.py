@@ -1,11 +1,17 @@
 import numpy as np
 import random
-from .costsList import costsList as distances
+try:
+    from .costsList import costsList as distances
+except:
+    from costsList import costsList as distances
 
 class Path:
-    def __init__(self, cidades = []):
+    def __init__(self, cidades = [], distance = -1):
         self.setRoute(cidades)
-        self.distance = self.calc_fitness()
+        if distance == -1:
+            self.distance = self.calc_fitness()
+        else:
+            self.distance = distance
 
     def setRoute(self, cidades = []):
         if len(cidades) > 0:
