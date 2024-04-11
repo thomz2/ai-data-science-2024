@@ -1,5 +1,5 @@
 from math import floor
-import random, numpy
+import random
 from .Path import Path
 
 class GeneticAlgo:
@@ -32,7 +32,7 @@ class GeneticAlgo:
         return son  
 
     def generate(self):
-        best_paths = []  # Lista para armazenar o melhor caminho de cada geração
+        best_paths = [] 
 
         for _ in range(self.generations):
 
