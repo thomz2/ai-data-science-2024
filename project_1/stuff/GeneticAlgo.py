@@ -1,6 +1,6 @@
 from math import floor
 import random, numpy
-from Path import Path
+from .Path import Path
 
 class GeneticAlgo:
     def __init__(self, pop_size, mut_rate = 0.1, generations = 1000):
@@ -58,10 +58,10 @@ class GeneticAlgo:
 
 
 
-test = GeneticAlgo(pop_size= 500, mut_rate= 0.6, generations = 1000)
-generations = test.generate()[1]
+# test = GeneticAlgo(pop_size= 500, mut_rate= 0.6, generations = 1000)
+# generations = test.generate()[1]
 
-for i in range(len(generations)):
-    print(f"{i}: {generations[i]}")
+# for i in range(len(generations)):
+#     print(f"{i}: {generations[i]}")
     
-print(test.mutations)
+# print(test.mutations)

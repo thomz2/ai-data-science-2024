@@ -1,6 +1,6 @@
 import numpy as np
 import random
-from costsList import costsList as distances
+from .costsList import costsList as distances
 
 class Path:
     def __init__(self, cidades = []):
